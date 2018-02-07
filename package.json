@@ -1,0 +1,19 @@
+{
+  "name": "robotchat",
+  "version": "1.0.0",
+  "description": "This is angular project  for the chatbot application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UjjawalX/robotchatbot.git"
+  },
+  "author": "ujjawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UjjawalX/robotchatbot/issues"
+  },
+  "homepage": "https://github.com/UjjawalX/robotchatbot#readme"
+}

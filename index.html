@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="css\style.css">
+		</head>
+		<body ng-app="app" ng-init="message='Ritu ritu'" ng-controller="chatCtrl">
+		
+
+			<div class="chatbox">
+				<div class="messagebox">
+					<div ng-repeat="umessage in usermessages ">
+						<div class="user" ng-if="umessage.type!='bot'">
+							<div class="user-photo"><img src="img\user.jpg"></div>
+							<p class="chat-message">{{umessage.text}}</p>
+							
+						</div>
+						<div class="bot" ng-if="umessage.type=='bot'">
+							<div class="user-photo"><img src="img\bot.png"></div>								
+							<p class="chat-message">{{umessage.text}}</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="inputbox">
+					<textarea ng-model="msg"></textarea>
+					<button ng-click="onSend()">Send</button>
+				</div>
+			</div>
+			<script src="node_modules\angular\angular.js"></script>
+			<script src="scripts\app.js"></script>
+			<script src="scripts\chat.ctrl.js"></script>
+		</body>
+</html>
